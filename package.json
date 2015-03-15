@@ -1,0 +1,22 @@
+{
+  "name": "newdayalarm",
+  "version": "1.0.0",
+  "description": "New Day Alarm",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MastaWu/newdayalarm.git"
+  },
+  "author": "Stephen Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MastaWu/newdayalarm/issues"
+  },
+  "homepage": "https://github.com/MastaWu/newdayalarm",
+  "dependencies": {
+    "express": "^4.12.2"
+  }
+}
