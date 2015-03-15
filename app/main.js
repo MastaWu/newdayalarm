@@ -1,17 +1,26 @@
 angular.modules('newday', [
 
-    'newday.controllers'
+    'newday.controllers',
+    'newday.service',
+    'ngRoute'
 
 ]).
 
 config(['$routeProvider', function($routeProvider){
 
         $routeProvider.
+
             when("/music", {
 
-                templateUrl: "views/music.html", controller: "musicController"
+                templateUrl: "views/music.html",
+                controller: "MusicController"
 
             }).
-            otherwise({redirectTo: '/music'});
+
+            otherwise({
+
+                redirectTo: '/music'
+
+            });
 
     }]);

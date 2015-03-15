@@ -1,5 +1,5 @@
-<!doctype html>
-<html ng-app>
+<!DOCTYPE html>
+<html ng-app="newday">
     <head>
 
         <meta charset="utf-8">
@@ -7,12 +7,30 @@
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="css/index.css">
         <script src="../bower_components/angular/angular.js"></script>
+        <script src="main.js"></script>
+        <script src="js/service.js"></script>
+        <script src="js/controller.js"></script>
 
     </head>
     <body>
         <div>
 
             <div ng-view></div>
+
+            Test
+
+            <input type="text" placeholder="Search" />
+            <table>
+                <tr>
+                    <th colspan="4">Music</th>
+                </tr>
+                <tr ng-repeat="music in music">
+                    <td>{{$index + 1}}</td>
+                    <td>{{music.id}}&nbsp;{{music.song_Name}}</td>
+                    <td>{{album_Name}}</td>
+                    <td>{{artist_Name}}</td>
+                </tr>
+            </table>
 
         </div>
     </body>
