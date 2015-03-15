@@ -1,5 +1,0 @@
-angular.modules('newday', [
-
-
-
-]);
