@@ -1,5 +1,20 @@
-.musicListHeader{
+.main-page{
 
+    margin: 3%;
 
+}
+
+.nav-buttons{
+
+    margin-bottom: 3%;
+    display: block;
+    text-align: -webkit-center;
+
+}
+
+body{
+
+    background-color: #262324;
+    color: aliceblue;
 
 }

@@ -1,27 +1,31 @@
-<div class="col-xs-12 col-md-12">
-    <form>
-        <div class="form-groups">
-            <input type="text" class="form-control" placeholder="Search" />
-        </div>
-    </form>
-    <table class="table table-body">
-        <tr>
-            <th class="musicListHeader"colspan="4">Music</th>
-        </tr>
-        <tr>
+<div class="col-xs-12 col-md-12 col-lg-12">
 
-            <th>ID</th>
-            <th>Song Name</th>
-            <th>Album Name</th>
-            <th>Artist Name</th>
+    <div class="musicData">
+        <form>
+            <div class="form-groups">
+                <input type="text" class="form-control" placeholder="Search" />
+            </div>
+        </form>
+        <table class="table table-body">
+            <tr>
+                <th class="musicListHeader"colspan="4">Music</th>
+            </tr>
+            <tr>
 
-        </tr>
-        <tr ng-repeat="music in musicList">
+                <th>ID</th>
+                <th>Song Name</th>
+                <th>Album Name</th>
+                <th>Artist Name</th>
 
-            <td>{{music.data.id}}</td>
-            <td>{{music.data.song_Name}}</td>
-            <td>{{music.data.album_Name}}</td>
-            <td>{{music.data.artist_Name}}</td>
-        </tr>
-    </table>
+            </tr>
+            <tr ng-repeat="music in musicList">
+
+                <td>{{music.data.id}}</td>
+                <td>{{music.data.song_Name}}</td>
+                <td>{{music.data.album_Name}}</td>
+                <td>{{music.data.artist_Name}}</td>
+            </tr>
+        </table>
+    </div>
+
 </div>

@@ -6,17 +6,37 @@
         <title>New Day, New Music</title>
 
     </head>
+
     <body class="app body" ng-app="newday">
 
-        <div class="container ">
+        <div class="container main-page">
 
             <div class="row">
+
+                <div class="col-xs-12 col-md-12 col-lg-12 nav-buttons">
+
+                    <div class="btn-group-lg">
+
+                    <button type="button" class="btn btn-default menu-button">Home</button>
+
+                    <button type="button" class="btn btn-default menu-button">Music</button>
+
+                    <button type="button" class="btn btn-default menu-button">Bands</button>
+
+                    <button type="button" class="btn btn-default menu-button">Contact</button>
+
+                    </div>
+
+                </div>
 
             </div>
 
             <div class="row">
+
                 <div ng-view></div>
+
             </div>
+
         </div>
 
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
