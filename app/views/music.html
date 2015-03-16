@@ -3,9 +3,10 @@
     <div class="musicData">
         <form>
             <div class="form-groups">
-                <input type="text" class="form-control" placeholder="Search" />
+                <input type="text" ng-model="songFilter" class="form-control" placeholder="Search" />
             </div>
         </form>
+
         <table class="table table-body">
             <tr>
                 <th class="musicListHeader"colspan="4">Music</th>
@@ -18,7 +19,7 @@
                 <th>Artist Name</th>
 
             </tr>
-            <tr ng-repeat="music in musicList">
+            <tr ng-repeat="music in musicList | filter: songFilter">
 
                 <td>{{music.data.id}}</td>
                 <td>{{music.data.song_Name}}</td>

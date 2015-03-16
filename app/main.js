@@ -17,9 +17,16 @@ config(['$routeProvider', function($routeProvider){
 
             }).
 
+            when("/home",{
+
+                templateUrl: "views/home.html",
+                controller: "HomeController"
+
+            }).
+
             otherwise({
 
-                redirectTo: '/music'
+                redirectTo: '/home'
 
             });
 
