@@ -2,9 +2,11 @@ var ndController = angular.module('newday.controllers', []);
 
 ndController.controller('MusicController', function($scope, ndAPI){
 
-    ndAPI.getMusic().success(function(res){
+    $scope.musicList = [];
 
-       $scope.music = res;
+    ndAPI.getMusic().success(function (res) {
+
+       $scope.musicList = res;
 
     });
 

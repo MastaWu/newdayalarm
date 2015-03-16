@@ -1,15 +1,13 @@
-var ndService = angular.module('newday.service', [])
-
-ndService.factory('ndAPI', function($http){
+angular.module('newday.service', []).factory('ndAPI', function($http){
 
     var musicAPI = {};
 
-    musicAPI.getMusic= function(){
+    musicAPI.getMusic = function(){
 
         return $http({
 
            method: 'JSONP',
-           url: 'http://stephen-wu.com/getMusic.php'
+           url: 'http://stephen-wu.com/getMusic.php?callback=JSON_CALLBACK'
 
         });
 

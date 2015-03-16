@@ -1,4 +1,4 @@
-angular.modules('newday', [
+angular.module('newday', [
 
     'newday.controllers',
     'newday.service',

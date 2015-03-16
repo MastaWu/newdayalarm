@@ -1,12 +1,27 @@
-<input type="text" placeholder="Search" />
-<table>
-    <tr>
-        <th colspan="4">Music</th>
-    </tr>
-    <tr ng-repeat="music in music">
-        <td>{{$index + 1}}</td>
-        <td>{{music.id}}&nbsp;{{music.song_Name}}</td>
-        <td>{{music.album_Name}}</td>
-        <td>{{music.artist_Name}}</td>
-    </tr>
-</table>
+<div class="col-xs-12 col-md-12">
+    <form>
+        <div class="form-groups">
+            <input type="text" class="form-control" placeholder="Search" />
+        </div>
+    </form>
+    <table class="table table-body">
+        <tr>
+            <th class="musicListHeader"colspan="4">Music</th>
+        </tr>
+        <tr>
+
+            <th>ID</th>
+            <th>Song Name</th>
+            <th>Album Name</th>
+            <th>Artist Name</th>
+
+        </tr>
+        <tr ng-repeat="music in musicList">
+
+            <td>{{music.data.id}}</td>
+            <td>{{music.data.song_Name}}</td>
+            <td>{{music.data.album_Name}}</td>
+            <td>{{music.data.artist_Name}}</td>
+        </tr>
+    </table>
+</div>
