@@ -13,6 +13,17 @@ angular.module('newday.service', []).factory('ndAPI', function($http){
 
     }
 
+    musicAPI.getBand = function(){
+
+        return $http({
+
+            method: 'JSONP',
+            url: 'http://stephen-wu.com/getMusic.php?callback=JSON_CALLBACK'
+
+        })
+
+    }
+
     return musicAPI;
 
 });

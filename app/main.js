@@ -10,6 +10,20 @@ config(['$routeProvider', function($routeProvider){
 
         $routeProvider.
 
+            when("/home",{
+
+                templateUrl: "views/home.html",
+                controller: "HomeController"
+
+            }).
+
+            when("/upload", {
+
+                templateUrl: "views/upload.html",
+                controller: "UploadController"
+
+            }).
+
             when("/music", {
 
                 templateUrl: "views/music.html",
@@ -17,10 +31,24 @@ config(['$routeProvider', function($routeProvider){
 
             }).
 
-            when("/home",{
+            when("/bands", {
 
-                templateUrl: "views/home.html",
-                controller: "HomeController"
+                templateUrl: "views/bands.html",
+                controller: "BandController"
+
+            }).
+
+            when("/trending", {
+
+                templateUrl: "views/trending.html",
+                controller: "TrendingController"
+
+            }).
+
+            when("/contact", {
+
+                templateUrl: "views/contact.html",
+                controller: "ContactController"
 
             }).
 
