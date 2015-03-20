@@ -2,6 +2,33 @@
 
     <div class="bandData">
 
+        <form>
+            <div class="form-groups searchInput">
+                <input type="text" ng-model="songFilter" class="form-control songSearch" placeholder="Search" />
+            </div>
+        </form>
+
+        <table class="table table-body">
+            <tr>
+                <th class="musicListHeader"colspan="4">Bands</th>
+            </tr>
+            <tr>
+
+                <th>ID</th>
+                <th>Song Name</th>
+                <th>Album Name</th>
+                <th>Artist Name</th>
+
+            </tr>
+            <tr ng-repeat="band in bandList | filter: songFilter">
+
+                <td>{{band.data.id}}</td>
+                <td>{{band.data.song_Name}}</td>
+                <td>{{band.data.album_Name}}</td>
+                <td>{{band.data.artist_Name}}</td>
+            </tr>
+        </table>
+
     </div>
 
 </div>

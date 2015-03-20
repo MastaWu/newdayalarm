@@ -1,8 +1,22 @@
+body{
+
+    background-color: #262324;
+    color: aliceblue;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+
+}
+
+.container{
+
+
+}
+
 .main-page{
 
     margin-left: 3%;
     margin-right: 3%;
-    height: 100%;
 
 }
 
@@ -11,13 +25,6 @@
     margin-top: 3%;
     display: inline-block;
     text-align: center;
-
-}
-
-body{
-
-    background-color: #262324;
-    color: aliceblue;
 
 }
 

@@ -2,7 +2,8 @@ angular.module('newday', [
 
     'newday.controllers',
     'newday.service',
-    'ngRoute'
+    'ngRoute',
+    'angular-parallax'
 
 ]).
 

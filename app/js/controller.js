@@ -21,7 +21,7 @@ ndController.
 
     }).
 
-    controller('BandController', function($scope){
+    controller('BandController', function($scope, ndAPI){
 
         $scope.bandList = [];
 
